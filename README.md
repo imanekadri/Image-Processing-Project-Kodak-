@@ -66,3 +66,27 @@ data/
 results/ 
 src/
 README.md
+├── data/
+│
+│
+├── notebooks/  
+│
+├── results 
+│ ├── histograms
+│
+│ ├── processed
+│
+├── utils.ipynb
+│
+└── requirements.txt
+
+
+## ▶️ Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/image-processing-project.git
+cd image-processing-project
+
+# Install required packages
+pip install opencv-python numpy matplotlib scikit-image
+
