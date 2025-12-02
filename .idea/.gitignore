@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Fichiers de résultats / images générées
+results/
+report/figures/
+*.png
+*.jpg
+*.jpeg
+
+# Mac / Linux / Windows temporaires
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
