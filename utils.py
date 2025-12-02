@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from skimage.metrics import structural_similarity as ssim
 
+
 def list_images(folder):
     exts = ('.png', '.jpg', '.jpeg', '.bmp')
     return sorted([os.path.join(folder, f) for f in os.listdir(folder) if f.lower().endswith(exts)])
@@ -52,4 +53,13 @@ def add_gaussian_noise(img, mean=0, sigma=10):
     noisy += gauss
     noisy = np.clip(noisy, 0, 255)  # garder les valeurs entre 0 et 255
     return noisy.astype(np.uint8)
+
+def psnr(original, processed):
+    mse = np.mean((original - processed) ** 2)
+    if mse == 0:
+        return float('inf')
+    return 20 * np.log10(255.0 / np.sqrt(mse))
+
+
+
 
