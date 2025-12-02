@@ -67,17 +67,16 @@ results/
 src/
 README.md
 ├── data/
-│
-│
+
 ├── notebooks/  
-│
+
 ├── results 
 │ ├── histograms
-│
+
 │ ├── processed
-│
+
 ├── utils.ipynb
-│
+
 └── requirements.txt
 
 
